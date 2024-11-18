@@ -1960,7 +1960,8 @@ class GUIManager:
         self._style = style = ttk.Style(root)
         default_font = nametofont("TkDefaultFont")
         # theme
-        theme = ''
+        # prevent mac os error
+        theme = 'classic'
         # theme = style.theme_names()[6]
         # style.theme_use(theme)
         # Fix treeview's background color from tags not working (also see '_fixed_map')

@@ -22,3 +22,6 @@ settings.json
 /appimage-build
 /*.AppImage
 /*.AppImage.zsync
+venv/
+.DS_Store
+.eggs/

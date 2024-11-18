@@ -8,6 +8,17 @@ This application allows you to AFK mine timed Twitch drops, without having to wo
 
 Every ~20 seconds, the application asks Twitch for a URL to the raw stream data of the channel currently being watched. It then fetches the metadata of this data stream - this is enough to advance the drops. Note that this completely bypasses the need to download any actual stream video and sound. To keep the status (ONLINE or OFFLINE) of the channels up-to-date, there's a websocket connection established that receives events about streams going up or down, or updates regarding the current amount of viewers.
 
+## How can I generate the Mac OS app?
+Executing this commands from the root path
+### If you want a Alias for develop
+```bash
+python setup.py py2app -A
+```
+### If you want the final app
+```bash
+python setup.py py2app
+```
+
 ### Features:
 
 - Stream-less drop mining - save on bandwidth.
