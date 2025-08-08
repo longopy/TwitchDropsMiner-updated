@@ -19,10 +19,50 @@ def read_requirements():
 
 APP = ["main.py"]
 DATA_FILES = [("", get_py_files()), ("lang", glob.glob("lang/*"))]
-PACKAGES = ["PIL", "pystray"]
+PACKAGES = [
+    "PIL", 
+    "pystray", 
+    "aiohttp", 
+    "validators", 
+    "asyncio",
+    "ssl",
+    "certifi",
+    "pkg_resources",
+    "jaraco",
+    "jaraco.text",
+    "setuptools",
+    "platformdirs",
+    "more_itertools",
+    "objc",
+    "Foundation",
+    "AppKit",
+    "Cocoa"
+]
 OPTIONS = {
     "iconfile": "pickaxe.icns",
-    "packages": PACKAGES
+    "packages": PACKAGES,
+    "includes": [
+        "pkg_resources.py2_warn",
+        "jaraco.text",
+        "jaraco.functools",
+        "more_itertools.recipes",
+        "importlib_resources",
+        "zipp"
+    ],
+    "excludes": [
+        "selenium",
+        "seleniumwire",
+        "PyQt5",
+        "PyQt6",
+        "PySide2",
+        "PySide6",
+        "tkinter",
+        "test",
+        "unittest"
+    ],
+    "arch": "universal2",
+    "semi_standalone": False,
+    "site_packages": True
 }
 
 setup(
