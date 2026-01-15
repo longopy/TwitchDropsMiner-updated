@@ -1,4 +1,18 @@
-# Twitch Drops Miner
+# :warning: This Fork is deprecated :warning:
+
+[Here is a script that automatically builds DevilXD's latest build.](https://github.com/Windows200000/TDM-builder)  
+You can link it in the Windows startup folder to run on startup. Make sure to disable autostart within TDM itself if you use it.
+
+---
+Unfortunately, I don't have the time to maintain this repo anymore because I'm busy with studies and work. DevilXD has caught up with drops working, dark mode, and prioritising by ending soonest, so I hope all of you will find what you want in his original repo.
+
+Thanks to all contributors, translators & issue creators for help and support on this journey. I hope you grew and learned along the way as I have.
+
+Love, Arne :)
+
+<br/><br/><br/><br/>
+
+# Original README: Twitch Drops Miner
 
 Thanks to @DevilXD and other contributors from the [original repo](https://github.com/DevilXD/TwitchDropsMiner) for the vast majority of the code.
 
@@ -62,7 +76,7 @@ python setup.py py2app
 
 - The Linux app is built and distributed using two distinct portable-executable formats: [AppImage](https://appimage.org/) and [PyInstaller](https://pyinstaller.org/).
 - There are no major differences between the two formats, but if you're looking for a recommendation, use the AppImage.
-- The Linux app should work out of the box on any modern distribution, as long as it has `glibc>=2.31` (PyInstaller package) or `glibc>=2.35` (AppImage package), plus a working display server.
+- The Linux app should work out of the box on any modern distribution, as long as it has `glibc>=2.35`, plus a working display server.
 - Every feature of the app is expected to work on Linux just as well as it does on Windows. If you find something that's broken, please [open a new issue](https://github.com/DevilXD/TwitchDropsMiner/issues/new).
 - The size of the Linux app is significantly larger than the Windows app due to the inclusion of the `gtk3` library (and its dependencies), which is required for proper system tray/notifications support.
 - As an alternative to the native Linux app, you can run the Windows app via [Wine](https://www.winehq.org/) instead. It works really well!
